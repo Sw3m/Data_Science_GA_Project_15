@@ -1,4 +1,5 @@
-﻿Boston,5,Female,83,1932,4182,836
+City,NumRecords,Gender,Age,YearOfBirth,TotalDur_sec,AvgDur_sec
+Boston,5,Female,83,1932,4182,836
 Boston,2,Female,77,1938,1457,728
 Boston,11,Male,77,1938,7645,695
 Boston,11,Male,76,1939,4956,450
