@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9200.15.1007.2230                                -->
+<workbook source-platform='win' version='9.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tblBikeShareTrips (CityBike)' inline='true' name='sqlserver.42304.764493888892' version='9.2'>
+      <connection authentication='sspi' class='sqlserver' dbname='CityBike' odbc-native-protocol='yes' server='SAMIRWDELLLAP\SQLEXPRESS_SW'>
+        <relation name='tblBikeShareTrips' table='[dbo].[tblBikeShareTrips]' type='table' />
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>18</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CustomerType]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>CustomerType</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearOfBirth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[YearOfBirth]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>YearOfBirth</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TripStart</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[TripStart]</local-name>
+            <parent-name>[tblBikeShareTrips]</parent-name>
+            <remote-alias>TripStart</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Age]' role='dimension' type='ordinal' />
+      <column caption='StartTime' datatype='datetime' name='[Calculation_389561380588679169]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[TripStart]' />
+      </column>
+      <column caption='Dur_Minutes' datatype='real' name='[Calculation_389561380590923778]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Duration]/ 60' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Type' datatype='string' hidden='true' name='[CustomerType]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Trip Start' datatype='datetime' name='[TripStart]' role='dimension' type='ordinal' />
+      <column caption='Year Of Birth' datatype='integer' name='[YearOfBirth]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\sawadhawan\Documents\My Tableau Repository (Beta)\Workbooks\CityBikeShare.tde' schema='Extract' tablename='Extract' update-time='10/29/2015 11:04:37 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Calculation_389561380588679169]' formula='[TripStart]' />
+            <calculation column='[Calculation_389561380590923778]' formula='[Duration]/ 60' />
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='1079583' timestamp-start='2015-10-29 23:04:37.062' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>39939635.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>36.995427864277225</statistic>
+                <statistic aggregation='Min' datatype='integer'>16</statistic>
+                <statistic aggregation='Max' datatype='integer'>117</statistic>
+                <statistic aggregation='Stdev' datatype='real'>10.969783411457934</statistic>
+                <statistic aggregation='StdevP' datatype='real'>10.969778330891664</statistic>
+                <statistic aggregation='Var' datatype='real'>120.33614809429767</statistic>
+                <statistic aggregation='VarP' datatype='real'>120.3360366289003</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1607496625.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calculation_389561380590923778</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Calculation_389561380590923778]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_389561380590923778</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6653</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>144619.93333333332</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>100</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Boston&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;NYC&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;Chicago&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>400</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Duration</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Duration</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6653</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>8677196</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>10</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Female&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Male&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>40</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>582750266736.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>539792.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1079583</statistic>
+                <statistic aggregation='Stdev' datatype='real'>311648.91216854792</statistic>
+                <statistic aggregation='StdevP' datatype='real'>311648.76783088036</statistic>
+                <statistic aggregation='Var' datatype='real'>97125044455.83931</statistic>
+                <statistic aggregation='VarP' datatype='real'>97124954490.505966</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='Median' datatype='integer'>539792</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4.1941838172568282e+17</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>6</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calculation_389561380588679169</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Calculation_389561380588679169]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_389561380588679169</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>200748</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='datetime'>#2011-07-28 10:12:00#</statistic>
+                <statistic aggregation='Max' datatype='datetime'>#2015-06-30 23:59:00#</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='Median' datatype='datetime'>#2015-04-14 19:14:00#</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TripStart</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[TripStart]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TripStart</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>200748</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='datetime'>#2011-07-28 10:12:00#</statistic>
+                <statistic aggregation='Max' datatype='datetime'>#2015-06-30 23:59:00#</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='Median' datatype='datetime'>#2015-04-14 19:14:00#</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearOfBirth</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[YearOfBirth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearOfBirth</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tblBikeShareTrips</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>2135420110.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1978.0045721357228</statistic>
+                <statistic aggregation='Min' datatype='integer'>1898</statistic>
+                <statistic aggregation='Max' datatype='integer'>1999</statistic>
+                <statistic aggregation='Stdev' datatype='real'>10.969783411465208</statistic>
+                <statistic aggregation='StdevP' datatype='real'>10.969778330898938</statistic>
+                <statistic aggregation='Var' datatype='real'>120.33614809445726</statistic>
+                <statistic aggregation='VarP' datatype='real'>120.33603662905989</statistic>
+                <statistic aggregation='Count' datatype='integer'>1079583</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4224000653750.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.521898' measure-ordering='alphabetic' measure-percentage='0.478102' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='HourAnalysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tblBikeShareTrips (CityBike)' name='sqlserver.42304.764493888892' />
+          </datasources>
+          <datasource-dependencies datasource='sqlserver.42304.764493888892'>
+            <column caption='StartTime' datatype='datetime' name='[Calculation_389561380588679169]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[TripStart]' />
+            </column>
+            <column caption='Dur_Minutes' datatype='real' name='[Calculation_389561380590923778]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Duration]/ 60' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Duration]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Trip Start' datatype='datetime' name='[TripStart]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_389561380588679169]' derivation='Hour' name='[hr:Calculation_389561380588679169:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_389561380590923778]' derivation='Sum' name='[sum:Calculation_389561380590923778:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlserver.42304.764493888892].[none:City:nk]'>
+            <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[sqlserver.42304.764493888892].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[sqlserver.42304.764493888892].[hr:Calculation_389561380588679169:qk]' field-type='quantitative' max='25' min='-2' range-type='fixed' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[sqlserver.42304.764493888892].[sum:Calculation_389561380590923778:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[sqlserver.42304.764493888892].[sum:Calculation_389561380590923778:qk]' scope='rows' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlserver.42304.764493888892].[none:Gender:nk]' />
+              <lod column='[sqlserver.42304.764493888892].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[sqlserver.42304.764493888892].[sum:Calculation_389561380590923778:qk]</rows>
+        <cols>[sqlserver.42304.764493888892].[hr:Calculation_389561380588679169:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='HourAnalysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='4' param='[sqlserver.42304.764493888892].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlserver.42304.764493888892].[none:City:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlserver.42304.764493888892].[hr:Calculation_389561380588679169:qk]</field>
+            <field>[sqlserver.42304.764493888892].[none:Age:ok]</field>
+            <field>[sqlserver.42304.764493888892].[none:City:nk]</field>
+            <field>[sqlserver.42304.764493888892].[none:Gender:nk]</field>
+            <field>[sqlserver.42304.764493888892].[yr:Calculation_389561380588679169:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='HourAnalysis' width='192'>
+      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
+      FmR1AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
