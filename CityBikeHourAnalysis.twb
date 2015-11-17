@@ -526,7 +526,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.53163' measure-ordering='alphabetic' measure-percentage='0.46837' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.553528' measure-ordering='alphabetic' measure-percentage='0.446472' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='shape' field='[none:City:nk]' type='shape'>
